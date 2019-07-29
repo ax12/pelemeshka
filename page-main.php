@@ -16,7 +16,7 @@
 get_header('main');
 ?>
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area main-page-top">
 		<main id="main" class="site-main">
 
 		<?php
@@ -32,6 +32,24 @@ get_header('main');
 
 		endwhile; // End of the loop.
 		?>
+            <div class="col-12 test">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias
+                assumenda aut commodi deleniti dignissimos distinctio
+                dolor eum illo ipsa maiores maxime molestiae nemo, nulla odit quia, quos sint sit?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquid animi assumenda
+                atque blanditiis dolore doloribus eaque eum iste labore minima molestias nemo neque odit,
+                quam similique temporibus ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias
+                assumenda aut commodi deleniti dignissimos distinctio
+                dolor eum illo ipsa maiores maxime molestiae nemo, nulla odit quia, quos sint sit?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquid animi assumenda
+                atque blanditiis dolore doloribus eaque eum iste labore minima molestias nemo neque odit,
+                quam similique temporibus ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias
+                assumenda aut commodi deleniti dignissimos distinctio
+                dolor eum illo ipsa maiores maxime molestiae nemo, nulla odit quia, quos sint sit?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquid animi assumenda
+                atque blanditiis dolore doloribus eaque eum iste labore minima molestias nemo neque odit,
+                quam similique temporibus ut voluptatem.
+            </div>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

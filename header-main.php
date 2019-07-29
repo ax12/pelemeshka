@@ -30,7 +30,6 @@
 
 	<header id="masthead" class="site-header">
 <!--        --><?php //echo carbon_get_theme_option('phone');?>
-<!--       <img src="--><?php //echo carbon_get_theme_option('main_logo'); ?><!--" alt="" />-->
        <div class="container-fluid">
            <div class="row bg-header justify-content-center" style="background-image: url(<?php echo carbon_get_theme_option('main_background_img'); ?>)">
               <div class="row justify-content-center"> <div class="col-12  center_img_header"> <img src="<?php echo carbon_get_theme_option('main_background_img2'); ?>" alt=""></div></div>
@@ -42,7 +41,10 @@
         <div class="col-12">
 <!--		<nav id="site-navigation" class="main-navigation">-->
 <!--			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">--><?php //esc_html_e( 'Primary Menu', 'plm' ); ?><!--</button>-->
-            <nav class="navbar  navbar-expand-lg navbar-dark nav nav-link navbar-nav text-center main-navigation">
+            <nav class="navbar navbar-expand-lg navbar-dark  navbar-nav main-navigation position-sticky">
+                <a class="navbar-brand" href="/">
+                    <img src="<?php echo carbon_get_theme_option('main_logo'); ?>" alt="">
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -69,7 +71,7 @@
                 </div>
             </nav>
 
-            
+
         </div><!--end row-->
         <!-- #site-navigation -->
 	</header><!-- #masthead -->
