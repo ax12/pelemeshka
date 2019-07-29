@@ -23,17 +23,11 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'plm' ); ?></a>
-
+главный Header
 	<header id="masthead" class="site-header">
-        <?php echo carbon_get_theme_option('phone');
-        echo carbon_get_theme_option( 'main_logo');
-        ?>
-        <?// получим ID картинки из метаполя термина
-        $id_logo_img = carbon_get_theme_option( 'main_logo');
-        // ссылка на полный размер картинки по ID вложения
-        $url_logo_img = wp_get_attachment_url( $id_logo_img );
-        ?>
-        <img src="<?php echo $url_logo_img; ?>" alt="" />
+        <?php echo carbon_get_theme_option('phone');?>
+       <img src="<?php echo carbon_get_theme_option('main_logo'); ?>" alt="" />
+       <img src="<?php echo carbon_get_theme_option('main_background_img'); ?>" alt="" />
 		<div class="site-branding">
 			<?php
 			the_custom_logo();

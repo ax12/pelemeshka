@@ -13,7 +13,7 @@
  * @package pelemeshka-ekb
  */
 
-get_header();
+get_header('main');
 ?>
 
 	<div id="primary" class="content-area">
