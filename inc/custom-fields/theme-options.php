@@ -14,6 +14,9 @@ use Carbon_Fields\Field;
             Field::make( 'image', 'main_background_img', __( 'Фоновая картика хедера "Время Есть"' ) )
                 ->set_value_type( 'url' )
                 ->help_text('Это главная картинка шапки сайта'),
+            Field::make( 'image', 'main_background_img2', __( 'Картинка по центру "Время Есть"' ) )
+                ->set_value_type( 'url' )
+                ->help_text('Эта картинка в центре хедера'),
             Field::make( 'image', 'main_logo', __( 'Логотип сайта "Время Есть"' ) )
                 ->help_text('Логотип сайта')
                 ->set_value_type( 'url' ),

@@ -28,13 +28,16 @@
 <!--        --><?php //echo carbon_get_theme_option('phone');?>
 <!--       <img src="--><?php //echo carbon_get_theme_option('main_logo'); ?><!--" alt="" />-->
        <div class="container-fluid">
-           <div class="row bg-header" style="background-image: url(<?php echo carbon_get_theme_option('main_background_img'); ?>)">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur cupiditate dolorem ducimus eaque, harum, iste libero non pariatur perferendis quidem tempora, vero. Cumque enim exercitationem hic inventore quisquam?
+           <div class="row bg-header justify-content-center" style="background-image: url(<?php echo carbon_get_theme_option('main_background_img'); ?>)">
+               <div class="col-3 col-md-2 col-sm-1"></div>
+               <div class="col-6 col-md-8 col-sm-10 center_img_header"> <img src="<?php echo carbon_get_theme_option('main_background_img2'); ?>" alt=""></div>
+               <div class="col-3 col-md-2 col-sm-1"></div>
            </div>
        </div>
 
 
-
+        <div class="col-2"></div>
+        <div class="col-8">
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'plm' ); ?></button>
 			<?php
@@ -43,7 +46,10 @@
 				'menu_id'        => 'primary-menu',
 			) );
 			?>
-		</nav><!-- #site-navigation -->
+		</nav>
+        </div>
+        <div class="col-2"></div>
+        <!-- #site-navigation -->
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">
