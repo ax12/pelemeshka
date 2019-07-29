@@ -186,3 +186,12 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+add_action( 'wp_enqueue_scripts', 'main_css' );
+function main_css() {
+    wp_enqueue_style( 'main', get_template_directory_uri() . '/main.css' );
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css' );
+    wp_register_style('google', 'https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic', array(), null, 'all');
+    wp_enqueue_style('google');
+
+}

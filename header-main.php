@@ -23,29 +23,17 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'plm' ); ?></a>
-главный Header
+
 	<header id="masthead" class="site-header">
-        <?php echo carbon_get_theme_option('phone');?>
-       <img src="<?php echo carbon_get_theme_option('main_logo'); ?>" alt="" />
-       <img src="<?php echo carbon_get_theme_option('main_background_img'); ?>" alt="" />
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$plm_description = get_bloginfo( 'description', 'display' );
-			if ( $plm_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $plm_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+<!--        --><?php //echo carbon_get_theme_option('phone');?>
+<!--       <img src="--><?php //echo carbon_get_theme_option('main_logo'); ?><!--" alt="" />-->
+       <div class="container-fluid">
+           <div class="row bg-header" style="background-image: url(<?php echo carbon_get_theme_option('main_background_img'); ?>)">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus autem consequatur cupiditate dolorem ducimus eaque, harum, iste libero non pariatur perferendis quidem tempora, vero. Cumque enim exercitationem hic inventore quisquam?
+           </div>
+       </div>
+
+
 
 		<nav id="site-navigation" class="main-navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'plm' ); ?></button>
