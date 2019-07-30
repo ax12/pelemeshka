@@ -11,6 +11,9 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
     padding-top: 2%;
 }
+h2 {
+    font-size: 2.5rem !important;
+}
 .content-font {
     font-family: 'Arimo', sans-serif;
 
@@ -36,7 +39,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 .content-bg {
     background-color: #ffffff;
+
 }
 .main-page-top {
     margin-top: 800px;
+}
+.slogan {
+    margin: 40px 30px;
+}
+.mx-padding {
+    padding: 0 5% !important;
+}
+.content-bg-2 {
+    background-image: url(/wp-content/uploads/2017/10/bg-menu.jpg)!important;
+    position: relative;
+    background-position: center;
+    -webkit-background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: 100%;
+    -moz-background-size: cover;
+    background-size: 100%;
+    background-size: cover;
 }

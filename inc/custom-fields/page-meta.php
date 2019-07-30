@@ -15,3 +15,10 @@ Container::make('post_meta', 'First')
         Field::make( 'textarea', 'text2', 'Описание' ),
     ));
 
+Container::make('post_meta', 'Second')
+    ->show_on_post_type ('page')
+    ->add_fields( array(
+        Field::make( 'text', 'part2_name', 'Название второго раздела' ),
+
+    ));
+
