@@ -19,36 +19,25 @@ get_header('main');
 	<div id="primary" class="content-area main-page-top">
 		<main id="main" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
 
-			get_template_part( 'template-parts/content', 'page' );
+            <div class="row ">
+            <div class="col-12 content-bg text-center">
+                <h1><?  the_title(); ?></h1>
+            </div>
+                <div class="col-12 content-bg text-center">
+                    <img src="<? echo get_template_directory_uri() . '/img/line-1.png' ?>" alt="">
+            </div>
+                <div class="col-10 content-bg text-center justify-content-center ">
+                    <?php echo carbon_get_post_meta(get_the_ID(), 'slogan');?>
+            </div>
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
-
-		endwhile; // End of the loop.
-		?>
-            <div class="col-12 test">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias
-                assumenda aut commodi deleniti dignissimos distinctio
-                dolor eum illo ipsa maiores maxime molestiae nemo, nulla odit quia, quos sint sit?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquid animi assumenda
-                atque blanditiis dolore doloribus eaque eum iste labore minima molestias nemo neque odit,
-                quam similique temporibus ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias
-                assumenda aut commodi deleniti dignissimos distinctio
-                dolor eum illo ipsa maiores maxime molestiae nemo, nulla odit quia, quos sint sit?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquid animi assumenda
-                atque blanditiis dolore doloribus eaque eum iste labore minima molestias nemo neque odit,
-                quam similique temporibus ut voluptatem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias
-                assumenda aut commodi deleniti dignissimos distinctio
-                dolor eum illo ipsa maiores maxime molestiae nemo, nulla odit quia, quos sint sit?
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, aliquid animi assumenda
-                atque blanditiis dolore doloribus eaque eum iste labore minima molestias nemo neque odit,
-                quam similique temporibus ut voluptatem.
+            </div>
+            <div class="row">
+                <div class="col-12 content-bg content-font">
+                    <?php
+                    the_content();
+                    ?>
+                </div>
             </div>
 
 		</main><!-- #main -->

@@ -8,10 +8,10 @@ Container::make( 'post_meta', 'Main page setings' )
        Field::make( 'text', 'my_text', 'Текстовое поле' ),
     ));
 
-Container::make('post_meta', 'All pages fields')
+Container::make('post_meta', 'First')
     ->show_on_post_type ('page')
     ->add_fields( array(
-        Field::make( 'text', 'text1', 'Название' ),
+        Field::make( 'textarea', 'slogan', 'Слоган' ),
         Field::make( 'textarea', 'text2', 'Описание' ),
     ));
 

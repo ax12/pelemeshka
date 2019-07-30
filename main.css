@@ -2,7 +2,18 @@
 
 
 body {
-    font-family: 'Oswald', sans-serif;
+    font-family:'Oswald',Helvetica,Arial,Lucida,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #444034;
+    font-family:'Oswald',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 500;
+    padding-top: 2%;
+}
+.content-font {
+    font-family: 'Arimo', sans-serif;
+
 }
 
 .bg-header {
@@ -17,15 +28,15 @@ body {
     background-size: cover;
 }
 .center_img_header {
-   margin-top: 25%;
+   margin-top: 35%;
 }
 .main-navigation {
     background-color: rgba(0,0,0,0.63) !important;
       text-transform: uppercase;
 }
-.test {
-    background-color: whitesmoke;
+.content-bg {
+    background-color: #ffffff;
 }
 .main-page-top {
-    margin-top: 600px;
+    margin-top: 800px;
 }
