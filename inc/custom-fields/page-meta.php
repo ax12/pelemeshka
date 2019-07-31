@@ -24,5 +24,8 @@ Container::make( 'post_meta', 'Main page setings' )
             ->set_value_type( 'url' ),
         Field::make( 'image', 'third_vine_img', __( 'Карта вин 3"' ) )
             ->set_value_type( 'url' ),
-
+        Field::make( 'text', 'part5_name', 'Название формы обратной связи' ),
+        Field::make( 'text', 'part6_name', 'Название шестого раздела (контакты)' ),
+        Field::make( 'text', 'adres_mine_page', 'Адрес (Главная страница)' ),
+        Field::make( 'text', 'time_working', 'Часы работы (Главная страница)' ),
     ));

@@ -14,6 +14,11 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
     font-size: 2.5rem !important;
 }
+h3 {
+    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+    color: #cc9966!important;
+    text-align: center;
+}
 .content-font {
     font-family: 'Arimo', sans-serif;
 
@@ -45,7 +50,7 @@ h2 {
     margin-top: 800px;
 }
 .slogan {
-    margin: 40px 30px;
+    margin: 3% 2%;
 }
 .mx-padding {
     padding: 0 5% !important;
@@ -68,9 +73,64 @@ h2 {
 .mg-0-auto {
     margin: 0 auto;
 }
-.img-menu {
-    width: 80%;
-}
+/*.img-menu {*/
+    /*width: 80%;*/
+/*}*/
 .mb-30 {
     margin-bottom: 2% !important;
+}
+.cook-img {
+    width: 60%;
+}
+
+.first-col {
+    float: left;
+    font-size: 30px;
+
+}
+.second-col {
+
+    font-size: 30px;
+}
+.et_pb_contact_field p{
+    margin-bottom: 3%;
+    padding: 0 0 0 3%;
+    border: 1px solid #cc9966;
+    margin-bottom: 3%;
+}
+
+.wpcf7-form-control {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #999;
+    background-color: #eee;
+    font-size: 14px;
+}
+.wpcf7-submit {
+    width: 100px;
+}
+
+.et_pb_text_10 {
+    text-transform: uppercase;
+    background-color: #f8f8f8;
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 24px;
+    color: #e09900!important;
+}
+
+.phone a:hover,
+.phone a:active,
+.phone a:visited,
+.phone a {
+    text-decoration: none;
+    color: #e09900 !important;
+}
+.font-white {
+    color: white;
 }
