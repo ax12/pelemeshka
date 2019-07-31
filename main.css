@@ -60,4 +60,8 @@ h2 {
     -moz-background-size: cover;
     background-size: 100%;
     background-size: cover;
+
+}
+.content-bg-2 h2 {
+    color: #ffffff !important;
 }

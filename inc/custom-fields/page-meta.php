@@ -8,17 +8,28 @@ Container::make( 'post_meta', 'Main page setings' )
        Field::make( 'text', 'my_text', 'Текстовое поле' ),
     ));
 
-Container::make('post_meta', 'First')
+Container::make('post_meta', 'First part')
     ->show_on_post_type ('page')
     ->add_fields( array(
         Field::make( 'textarea', 'slogan', 'Слоган' ),
-        Field::make( 'textarea', 'text2', 'Описание' ),
+
     ));
 
-Container::make('post_meta', 'Second')
+Container::make('post_meta', 'Second part')
     ->show_on_post_type ('page')
     ->add_fields( array(
         Field::make( 'text', 'part2_name', 'Название второго раздела' ),
 
     ));
 
+Container::make('post_meta', 'Third part')
+    ->show_on_post_type ('page')
+    ->add_fields( array(
+        Field::make( 'text', 'part3_name', 'Название третьего раздела' ),
+        Field::make( 'image', 'first_img', __( 'Картинка заказ пельменей 1"' ) )
+            ->set_value_type( 'url' )
+            ->help_text('Это первая картинка'),
+        Field::make( 'image', 'second_img', __( 'Картинка заказ пельменей 2"' ) )
+            ->set_value_type( 'url' )
+            ->help_text('Это вторая картинка'),
+    ));

@@ -1,4 +1,4 @@
-<?php /* Template Name: Главная страница */ ?>
+<?php /* Template Name: Шаблон главной страницы */ ?>
 <?php
 /**
  * The template for displaying all pages
@@ -46,7 +46,7 @@ get_header('main');
     <!--    END block-section 1        -->
     <!--    START block-section 2       -->
     <div class="row content-bg-2">
-        <div class="col-12  text-center mx-white-font">
+        <div class="col-12  text-center">
             <h2>   <?php echo carbon_get_post_meta(get_the_ID(), 'part2_name');?> </h2>
         </div>
         <div class="col-12  text-center">
@@ -62,6 +62,28 @@ get_header('main');
     </div>
 
     <!--    END block-section 2        -->
+
+    <!--    START block-section 3       -->
+    <div class="row content-bg justify-content-md-center">
+        <div class="col-12  text-center">
+            <h2>   <?php echo carbon_get_post_meta(get_the_ID(), 'part3_name');?> </h2>
+        </div>
+        <div class="col-12  text-center">
+            <img src="<? echo get_template_directory_uri() . '/img/line-1.png' ?>" alt="">
+        </div>
+
+
+        <div class="col-4  text-center content-font slogan">
+            <a href="#"><img src="<?php echo carbon_get_post_meta(get_the_ID(),'first_img'); ?>" alt=""></a>
+        </div>
+        <div class="col-4  text-center content-font slogan">
+            <a href="#"><img src="<?php echo carbon_get_post_meta(get_the_ID(),'second_img'); ?>" alt=""></a>
+        </div>
+
+
+    </div>
+
+    <!--    END block-section 3        -->
 
 </div>
 		</main><!-- #main -->
