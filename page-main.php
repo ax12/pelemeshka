@@ -102,6 +102,23 @@ get_header('main');
 
     <!--    END block-section 4        -->
 
+    <!--    START block-section 5       -->
+    <div class="row content-bg justify-content-md-center">
+        <div class="col-12  text-center">
+            <h2>   <?php echo carbon_get_post_meta(get_the_ID(), 'part5_name');?> </h2>
+        </div>
+
+        <div class="col-8  text-center content-font slogan">
+
+           <?php echo do_shortcode( '[contact-form-7 id="660" title="Контактная форма 1"]' ); ?>
+        </div>
+
+
+    </div>
+
+
+    <!--    END block-section 5        -->
+
 </div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
