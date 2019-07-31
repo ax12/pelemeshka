@@ -18,4 +18,11 @@ Container::make( 'post_meta', 'Main page setings' )
             ->help_text('Это вторая картинка'),
         Field::make( 'text', 'part4_name', 'Название четвертого раздела' ),
 
+        Field::make( 'image', 'first_vine_img', __( 'Карта вин 1"' ) )
+            ->set_value_type( 'url' ),
+        Field::make( 'image', 'second_vine_img', __( 'Карта вин 2"' ) )
+            ->set_value_type( 'url' ),
+        Field::make( 'image', 'third_vine_img', __( 'Карта вин 3"' ) )
+            ->set_value_type( 'url' ),
+
     ));

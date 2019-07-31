@@ -81,7 +81,7 @@ get_header('main');
         </div>
 
     </div>
-    <div class="row text-center ">
+    <div class="row text-center mb-30">
        <div class="col-12"><a href="/dostavka"> <button type="button" class="btn btn-outline-secondary">заказать доставку </button></a></div>
     </div>
 
@@ -92,16 +92,12 @@ get_header('main');
         <div class="col-12  text-center">
             <h2>   <?php echo carbon_get_post_meta(get_the_ID(), 'part4_name');?> </h2>
         </div>
-        <div class="col-12  text-center">
+        <div class="col-12  text-center mb-30">
             <img src="<? echo get_template_directory_uri() . '/img/line-1.png' ?>" alt="">
         </div>
-
-        <div class="col-2"></div>
-        <div class="col-8  text-center content-font slogan">
-            <?php echo do_shortcode('[supsystic-gallery id=2]') ?>
-        </div>
-        <div class="col-2"></div>
-
+            <div class="col-4 popmake-396"> <img class="img-menu rounded mx-auto d-block" src="<?php echo carbon_get_post_meta(get_the_ID(),'first_vine_img'); ?>" alt=""> </div>
+            <div class="col-4 popmake-465"> <img class="img-menu rounded mx-auto d-block" src="<?php echo carbon_get_post_meta(get_the_ID(),'second_vine_img'); ?>" alt=""> </div>
+            <div class="col-4 popmake-478"> <img class="img-menu rounded mx-auto d-block" src="<?php echo carbon_get_post_meta(get_the_ID(),'third_vine_img'); ?>" alt=""> </div>
     </div>
 
     <!--    END block-section 4        -->
