@@ -19,6 +19,9 @@ h3 {
     color: #cc9966!important;
     text-align: center;
 }
+h4 {
+    color: #cc9933;
+}
 .content-font {
     font-family: 'Arimo', sans-serif;
 
@@ -71,7 +74,8 @@ h3 {
     color: #ffffff !important;
 }
 .mg-0-auto {
-    margin: 0 auto;
+    margin: 0 auto !important;
+    width: 100%
 }
 /*.img-menu {*/
     /*width: 80%;*/
@@ -133,4 +137,21 @@ h3 {
 }
 .font-white {
     color: white;
+}
+
+/*site-footer*/
+.site-footer {
+    background-color: #222;
+    min-height: 300px;
+}
+.footer-conteyner {
+    max-width: 1310px;
+}
+.links-footer a:hover,
+.links-footer a:active,
+.links-footer a:visited,
+.links-footer a {
+    text-decoration: none;
+    color: #ffffff !important;
+    vertical-align: baseline;
 }
