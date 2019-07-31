@@ -65,3 +65,6 @@ h2 {
 .content-bg-2 h2 {
     color: #ffffff !important;
 }
+.mg-0-auto {
+    margin: 0 auto;
+}

@@ -74,16 +74,37 @@ get_header('main');
 
 
         <div class="col-4  text-center content-font slogan">
-            <a href="#"><img src="<?php echo carbon_get_post_meta(get_the_ID(),'first_img'); ?>" alt=""></a>
+            <a href="/dostavka"><img src="<?php echo carbon_get_post_meta(get_the_ID(),'first_img'); ?>" alt=""></a>
         </div>
         <div class="col-4  text-center content-font slogan">
-            <a href="#"><img src="<?php echo carbon_get_post_meta(get_the_ID(),'second_img'); ?>" alt=""></a>
+            <a href="/dostavka"><img src="<?php echo carbon_get_post_meta(get_the_ID(),'second_img'); ?>" alt=""></a>
         </div>
 
-
+    </div>
+    <div class="row text-center ">
+       <div class="col-12"><a href="/dostavka"> <button type="button" class="btn btn-outline-secondary">заказать доставку </button></a></div>
     </div>
 
     <!--    END block-section 3        -->
+
+    <!--    START block-section 4       -->
+    <div class="row content-bg-2">
+        <div class="col-12  text-center">
+            <h2>   <?php echo carbon_get_post_meta(get_the_ID(), 'part4_name');?> </h2>
+        </div>
+        <div class="col-12  text-center">
+            <img src="<? echo get_template_directory_uri() . '/img/line-1.png' ?>" alt="">
+        </div>
+
+        <div class="col-2"></div>
+        <div class="col-8  text-center content-font slogan">
+            <?php echo do_shortcode('[supsystic-gallery id=2]') ?>
+        </div>
+        <div class="col-2"></div>
+
+    </div>
+
+    <!--    END block-section 4        -->
 
 </div>
 		</main><!-- #main -->
