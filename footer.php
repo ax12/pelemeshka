@@ -42,7 +42,8 @@
         </div>
           <div class="col-md-3 col-sm-12 ">
               <h4>Следуйте за нами</h4>
-              <i class="fab fa-instagram"></i> Instagramm
+               <p class="font-white"><i class="fab fa-instagram"></i> Instagramm</p>
+               <p class="font-white"><i class="fab fa-vk"></i> ВКОНТАКТЕ</p>
           </div>
 
 		</div><!-- .end-row -->
