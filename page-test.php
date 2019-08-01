@@ -1,3 +1,4 @@
+?<? /*Template name: Test*/?>
 <?php
 /**
  * The template for displaying all pages
@@ -12,7 +13,7 @@
  * @package pelemeshka-ekb
  */
 
-get_header();
+get_header('test-header');
 ?>
 
 	<div id="primary" class="content-area">

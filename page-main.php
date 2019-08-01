@@ -103,7 +103,7 @@ get_header('main');
     <!--    END block-section 4        -->
 
     <!--    START block-section 5       -->
-    <div class="row content-bg justify-content-md-center">
+    <div id="zakazat" class="row content-bg justify-content-md-center">
         <div class="col-12  mb-30 text-center justify-content-center">
             <h3>   <?php echo carbon_get_post_meta(get_the_ID(), 'part5_name');?> </h3>
         </div>
