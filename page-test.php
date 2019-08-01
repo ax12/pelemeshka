@@ -13,7 +13,7 @@
  * @package pelemeshka-ekb
  */
 
-get_header('test-header');
+get_header('testheader');
 ?>
 
 	<div id="primary" class="content-area">
@@ -35,6 +35,9 @@ get_header('test-header');
 </div> <!--END CONTAINER-->
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+
+
 
 <?php
 get_sidebar();

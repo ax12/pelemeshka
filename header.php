@@ -29,41 +29,32 @@
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'plm' ); ?></a>
 
     <header id="masthead" class="site-header">
-<!--        --><?php //echo carbon_get_theme_option('phone');?>
-        <div class="container-fluid ">
+        <div class="container-fluid">
+            <div class="row justify-content-center main-navigation-mx fixed-top">
 
+                <nav class="navbar navbar-expand-lg navbar-dark  justify-content-center disable-decor-link  "
 
-        <div class="row  pl-0 pr-0">
-
-            <div class="col-12 pl-0 pr-0 d-flex">
-
-                <nav class="navbar navbar-expand-lg navbar-dark  navbar-nav main-navigation position-sticky ">
-                    <a class="navbar-brand" href="/">
-                        <img src="<?php echo carbon_get_theme_option('main_logo'); ?>" alt="">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse myalign d-flex justify-content-center" id="navbarNav">
-                        <?php
-                        wp_nav_menu([
-                            'theme_location' => 'menu-1',
-                            'menu_id'        => 'primary-menu',
-                            'depth'           => 2,
-                            'container'       => false,
-                            'menu_class'      => 'navbar-nav mr-auto myalign',
-                            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                            'walker'          => new WP_Bootstrap_Navwalker()
-                        ]);
-
-                        ?>
-                    </div>
+                <a class="navbar-brand" href="/">
+                    <img src="<?php echo carbon_get_theme_option('main_logo'); ?>" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <?php
+                    wp_nav_menu([
+                        'theme_location' => 'menu-1',
+                        'menu_id'        => 'primary-menu',
+                        'depth'           => 2,
+                        'container'       => false,
+                        'menu_class'      => 'nav justify-content-center',
+                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                        'walker'          => new WP_Bootstrap_Navwalker()
+                    ]);
+                    ?>
+                </div>>
                 </nav>
 
+            </div>
 
-            </div><!--end row-->
-        </div> <!-- #site-navigation -->
-        </div><!--end container-fluid-->
-    </header><!-- #masthead -->
-
-    <div id="content" class="site-content">
+        </div><!--        END container fluid-->

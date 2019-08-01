@@ -38,34 +38,32 @@
 
         <div class="row justify-content-md-center">
 
-        <div class="col-12">
-<!--		<nav id="site-navigation" class="main-navigation">-->
-<!--			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">--><?php //esc_html_e( 'Primary Menu', 'plm' ); ?><!--</button>-->
-            <nav class="navbar navbar-expand-lg navbar-dark  navbar-nav main-navigation position-sticky">
+            <div class="row justify-content-center main-navigation-mx fixed-top">
+
+                <nav class="navbar navbar-expand-lg navbar-dark  justify-content-center disable-decor-link  "
+
                 <a class="navbar-brand" href="/">
                     <img src="<?php echo carbon_get_theme_option('main_logo'); ?>" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse myalign" id="navbarNav">
-			<?php
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <?php
                     wp_nav_menu([
-                    'theme_location' => 'menu-1',
-                     'menu_id'        => 'primary-menu',
-                    'depth'           => 2,
-                    'container'       => false,
-                    'menu_class'      => 'navbar-nav mr-auto myalign',
-                    'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
-                    'walker'          => new WP_Bootstrap_Navwalker()
+                        'theme_location' => 'menu-1',
+                        'menu_id'        => 'primary-menu',
+                        'depth'           => 2,
+                        'container'       => false,
+                        'menu_class'      => 'nav justify-content-center',
+                        'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                        'walker'          => new WP_Bootstrap_Navwalker()
                     ]);
+                    ?>
+                </div>>
+                </nav>
 
-			?>
-                </div>
-            </nav>
-
-
-        </div><!--end row-->
+            </div>
         <!-- #site-navigation -->
 	</header><!-- #masthead -->
 

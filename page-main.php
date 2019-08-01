@@ -19,9 +19,9 @@ get_header('main');
 	<div id="primary" class="content-area main-page-top">
 		<main id="main" class="site-main">
 
-<div class="container-fluid">
+<div class="container-fluid" id="about">
 <!--    START block-section 1       -->
-    <div class="row ">
+    <div class="row" >
             <div class="col-12 content-bg text-center">
                 <h1><?  the_title(); ?></h1>
             </div>
@@ -45,7 +45,7 @@ get_header('main');
             </div>
     <!--    END block-section 1        -->
     <!--    START block-section 2       -->
-    <div class="row content-bg-2">
+    <div class="row content-bg-2" id="menu">
         <div class="col-12  text-center">
             <h2>   <?php echo carbon_get_post_meta(get_the_ID(), 'part2_name');?> </h2>
         </div>
@@ -88,7 +88,7 @@ get_header('main');
     <!--    END block-section 3        -->
 
     <!--    START block-section 4       -->
-    <div class="row content-bg-2">
+    <div class="row content-bg-2" id="vina">
         <div class="col-12  text-center">
             <h2>   <?php echo carbon_get_post_meta(get_the_ID(), 'part4_name');?> </h2>
         </div>
@@ -131,7 +131,7 @@ get_header('main');
     <!--    END block-section 5        -->
 
     <!--    START block-section 6       -->
-    <div class="row content-bg-2 justify-content-md-center">
+    <div class="row content-bg-2 justify-content-md-center id="kontakty">
         <div class="col-12  text-center">
             <h2>   <?php echo carbon_get_post_meta(get_the_ID(), 'part6_name');?> </h2>
         </div>
